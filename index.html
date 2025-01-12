@@ -10,11 +10,27 @@
       font-family: Arial, sans-serif;
     }
 
-    .navbar {
+    
+    .head-ta{
+      display: flex;
       background-color: #333;
-      padding: 1em;
-      text-align: center;
-      position: relative;
+    }
+    
+    .head{
+      flex-direction: row;
+      
+    }
+    .home{
+      margin-left: 150px;
+      color: #fff;
+    }
+    .service{
+      margin-left: 150px;
+      color: #fff;
+    }
+    .contact{
+      margin-left: 150px;
+      color: #fff;
     }
 
     .navbar ul {
@@ -40,13 +56,53 @@
       background-color: #555;
       text-transform: uppercase;
     }
+    .container{
+      flex-wrap: wrap;
+      justify-content: space-around;
+      display: flex;
 
+    }
+    .container-card{
+      height: 400px;
+      width: 300px;
+      box-shadow: 0 0  10px;
+      margin:  11px 20px 20px;
+      margin-top: 60px;
+    }
+    .img-container{
+      width: 100%;
+      height: 50%;
+      display: block;
+      margin: 0 auto;
+
+    }
+    h5{
+      color: rgb(69, 69, 196);
+      font-family: Arial, Helvetica, sans-serif;
+
+      text-align: justify;
+    }
+    .yera{
+      color: rgb(76, 186, 76);
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .icon2{
+      display: none;
+
+    }
+    
+    
     /* For Mobile (up to 600px) */
     @media only screen and (max-width: 600px) {
       .navbar {
         text-align: left;
         padding: 0.5em;
       }
+      .head{
+      display: none;
+      
+      
+    }
 
       .navbar ul {
         display: none;
@@ -81,6 +137,7 @@
         top: 15px;
         right: 20px;
         cursor: pointer;
+        margin: 0 auto;
       }
 
       .navbar .menu-toggle div {
@@ -93,7 +150,28 @@
       .navbar.open ul {
         display: flex;
       }
+    
+    .number {
+            font-family: 'Courier New', Courier, monospace;
+            padding-left: 20px;
+            font-size: 1.1rem;
+        }
+        .icon2{
+      display: block;
+      margin: 0 auto;
+      height: 60px;
+
     }
+    .home{
+      display:none
+    }
+    .service{
+      display:none
+    }
+    .contact{
+      display:none
+    }
+  }
 
     /* For Tablet (up to 1024px) */
     @media only screen and (max-width: 1024px) {
@@ -113,6 +191,10 @@
       .navbar .menu-toggle {
         display: none;
       }
+      .icon{
+        display: none;
+      
+      }
     }
 
     /* For Desktop (1025px and above) */
@@ -129,10 +211,12 @@
       .navbar a {
         padding: 15px 20px;
       }
+      .icon{
+        display: none;
+        
+      }
     }
-    .head{
-      margin: 50px 0 0 0 ;
-    }
+  
     .img {
       height: 90px;
       width: 130px;
@@ -140,6 +224,7 @@
       margin-top: -20px;
       border: 1px;
       border-radius: 60%;
+      justify-content: left;
     }
     .card {
       width: 100%;
@@ -166,29 +251,52 @@
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="head">
-      <img src="https://i.pinimg.com/originals/4f/09/ee/4f09eeda4a01e56c6bfde7bcbd706779.jpg" alt="Logo" class="img"><span></span>
-    </div>
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="services.html">Services</a></li>
-    </ul>
-  </nav>
+  
+    <div class="head-ta">
+      
+      <div>
+      <img src="https://i.pinimg.com/originals/4f/09/ee/4f09eeda4a01e56c6bfde7bcbd706779.jpg" alt="Logo" class="img">
+      </div>
+      <div class="home">Home</div>
+      <div class="service">Service</div>
+      <div class="contact">Contact</div>
+      <div class="icon2">
+      <img src="menu.png" height="70px" alt="img">
+      </div>
+    
+   </div>
+  
+<div class="container">
 
-  <div style="padding: 20px; text-align: center;">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
-    </style>
-    <div class="he">
-      <img src="https://th.bing.com/th/id/OIP.DakaUoEO7gNq6piMdft5_QAAAA?pid=ImgDet&w=178&h=195&c=7&dpr=1.3" alt="">
-      <h1>शुभ दीपावली</h1>
-      <h3>निमित्त आपनांस व आपल्या परिवारास</h3>
-      <h2>मंगलमय शुभेच्छा..!</h2>
-    </div>
-    <p style="font-family: 'Bungee Spice', serif; font-weight: 900; font-size: 20px;">Celebrate the Festival of Lights with joy, love, and happiness.</p>
+  <div class="container-card">
+<img src="https://th.bing.com/th/id/OIP.oHemjt3FdHv2avsbkXwBBwHaHa?rs=1&pid=ImgDetMain" class="img-container">
+<h3> ₹ 7000.00</h3>
+<h5>BIRKENSTOCK bend low natural leather unisex shose</h5>
+<h5 class="yera">Birkenstock india</h5>
+<span class="number">free shipping</span>
   </div>
+  <div class="container-card">
+    <img src="https://www.birkenstock.in/cdn/shop/products/1017722.jpg?v=1627401925&width=1780" class="img-container">
+    <h3> ₹ 13,990.00</h3>
+<h5> BIRKENSTOCK bend low natural leather unisex shose</h5>
+<h5 class="yera">Birkenstock india</h5>
+<span class="number">free shipping</span>
+  </div>
+  <div class="container-card">
+    <img src="https://i.pinimg.com/originals/77/00/63/770063474948ee76a49aca20e0f0add5.jpg" class="img-container">
+    <h3> ₹ 990.00</h3>
+<h5> BIRKENSTOCK bend low natural leather unisex shose</h5>
+<h5 class="yera">Birkenstock india</h5>
+<span class="number">free shipping</span>
+  </div>
+  <div class="container-card">
+
+    <img src="https://th.bing.com/th/id/OIP.5m-LvAI-w93uIjMid9nzQgHaHa?pid=ImgDet&w=178&h=178&c=7&dpr=1.3" class="img-container">
+    <h3> ₹ 14,990.00</h3>
+<h5> BIRKENSTOCK bend low natural leather unisex shose</h5>
+<h5 class="yera">Birkenstock india</h5>
+<span class="number">free shipping</span>
+  </div>
+</div>
 </body>
 </html>
